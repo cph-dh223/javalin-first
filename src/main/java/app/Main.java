@@ -1,3 +1,4 @@
+package app;
 import app.config.ThymeleafConfig;
 import io.javalin.Javalin;
 import io.javalin.rendering.template.JavalinThymeleaf;
@@ -16,5 +17,6 @@ public class Main {
         // Routing
 
         app.get("/", ctx ->  ctx.render("index.html"));
+        app.get("/login", ctx ->  ctx.render("login.html"));
     }
 }
