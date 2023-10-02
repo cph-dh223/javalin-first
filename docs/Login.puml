@@ -1,0 +1,24 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+actor User as u
+
+package 4thingsplus{
+    usecase login
+    usecase (create user) as cuser
+    usecase logout
+    usecase (add talsk) as atalsk
+    usecase (complete talsk) as ctalsk
+    usecase (undo talsk) as utalsk
+    usecase (doing talsk) as dtalsk
+}
+
+u -> login
+u -> cuser
+u -> logout
+u -> atalsk
+u -> ctalsk
+u -> utalsk
+u -> dtalsk
+
+@enduml

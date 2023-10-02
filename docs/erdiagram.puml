@@ -1,0 +1,17 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class user {
+    u_ID
+    user_name
+    password
+}
+class task {
+    t_ID
+    u_ID 
+    task
+    state
+}
+user::u_ID "1" -> "*" task::u_ID
+
+@enduml
